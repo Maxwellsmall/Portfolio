@@ -1,0 +1,211 @@
+:root {
+  --text: #6b6375;
+  --text-h: #08060d;
+  --bg: #fff;
+  --border: #e5e4e7;
+  --code-bg: #f4f3ec;
+  --accent: #aa3bff;
+  --accent-bg: rgba(170, 59, 255, 0.1);
+  --accent-border: rgba(170, 59, 255, 0.5);
+  --social-bg: rgba(244, 243, 236, 0.5);
+  --shadow:
+    rgba(0, 0, 0, 0.1) 0 10px 15px -3px, rgba(0, 0, 0, 0.05) 0 4px 6px -2px;
+
+  --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --text: #9ca3af;
+    --text-h: black;
+    --bg: #16171d;
+    --border: #2e303a;
+    --code-bg: #1f2028;
+    --accent: #c084fc;
+    --accent-bg: rgba(192, 132, 252, 0.15);
+    --accent-border: rgba(192, 132, 252, 0.5);
+    --social-bg: rgba(47, 48, 58, 0.5);
+    --shadow:
+      rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+#root {
+  width: 800px;
+  max-width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  border-inline: 1px solid #D1D5DB;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 36px;
+  /* letter-spacing: -1.68px; */
+  margin: 32px 0;
+  line-height: 118%;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: #f5f5f5;
+}
+
+.nav-fixed-wrapper {
+  position: fixed;
+  top: 25px;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.liquid-glass {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 6px 6px 20px;
+
+  /* Glassmorphism Core */
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+  /* Border: Less rounded, more refined */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 24px;
+  /* Squarer than a full pill */
+
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.07);
+}
+
+.nav-link {
+  color: #4b5563;
+  padding: 10px 12px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  /* Fluid motion */
+  position: relative;
+  border-radius: 12px;
+}
+
+/* The Stretch & Complementary Glow */
+.nav-link:hover {
+  color: #000;
+  padding: 10px 20px;
+  /* The "Stretch" effect */
+  background: rgba(100, 108, 255, 0.1);
+  /* Subtle complementary tint */
+}
+
+/* Vertical Divider */
+.nav-divider {
+  width: 1px;
+  height: 20px;
+  background-color: rgba(0, 0, 0, 0.08);
+  margin: 0 4px;
+}
+
+/* The Blog Button - Exact match for the screenshot */
+.nav-blog-btn {
+  background-color: #000;
+  color: #fff;
+  padding: 12px 28px;
+  border-radius: 16px;
+  /* Matches the squarer aesthetic */
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.nav-blog-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  /* Complementary liquid glow for the button */
+  background: linear-gradient(135deg, #000 0%, #1a1a1a 100%);
+}
+
+/* This ensures the icons stay in a horizontal line */
+.nav-socials {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  /* Adjust gap to match the screenshot spacing */
+}
+
+/* Ensure the links don't shrink when the nav stretches */
+.nav-link {
+  flex-shrink: 0;
+  /* ... keep your existing transition and padding ... */
+}
+
+body{
+  background-color: white;
+}

@@ -5,7 +5,7 @@ import './ProjectDetail.css';
 
 const ProjectDetail: React.FC = () => {
   const { id } = useParams<{ id: string }>();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   const project = projects.find((p) => p.id === id);
 
   useEffect(() => {

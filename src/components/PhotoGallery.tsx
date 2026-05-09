@@ -1,6 +1,14 @@
-import React from 'react';
+import React from 'react'; // You can actually remove this line entirely in most modern setups
 
-const Polaroid = ({ imgSrc, handle, rotation }) => {
+// 1. Define the shape of the props
+interface PolaroidProps {
+  imgSrc: string;
+  handle: string;
+  rotation: number;
+}
+
+// 2. Apply the interface to the component
+const Polaroid: React.FC<PolaroidProps> = ({ imgSrc, handle, rotation }) => {
   return (
     <div className="polaroid-card" style={{ transform: `rotate(${rotation}deg)` }}>
       <div className="image-container">
@@ -13,7 +21,7 @@ const Polaroid = ({ imgSrc, handle, rotation }) => {
   );
 };
 
-const PhotoGallery = () => {
+const PhotoGallery: React.FC = () => {
   return (
     <div className="gallery-wrapper">
       <Polaroid 

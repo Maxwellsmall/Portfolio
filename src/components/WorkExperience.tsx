@@ -4,39 +4,33 @@ import './WorkExperience.css';
 const WorkExperience: React.FC = () => {
   const experiences = [
     {
-      date: 'Sept 2024-Present',
-      role: 'Founder & CEO at',
-      company: 'Pxxl App',
+      date: 'Sept 2025-Present',
+      role: 'Software Developer at',
+      company: 'Rule Creationz',
+      link: 'rulecreationz.com'
+    },
+    {
+      date: 'Sept 2026-Present',
+      role: 'Robotics Educator at',
+      company: '6thTouch Robotics academy',
       link: '#'
     },
     {
-      date: 'April 2026-Present',
-      role: 'Frontend Developer at',
-      company: 'Nexus Automaark Systems.',
-      link: '#'
+      date: 'April 2025-Present',
+      role: 'Full stack Developer at',
+      company: 'BI Marketplace',
+      link: 'bimarketplace.org'
     },
     {
-      date: 'Feb 2026-Present',
-      role: 'Mobile App Developer at',
-      company: 'Rinku Technology Limited.',
-      link: '#'
+      date: '2025',
+      role: 'Volunteer at',
+      company: 'Tech Summer for Teens, TGDI',
+      link: 'https://tgdi.org.ng/'
     },
     {
       date: '2025-Present',
-      role: 'Frontend Developer at',
-      company: 'Steadfast Int.',
-      link: '#'
-    },
-    {
-      date: '2024-Present',
-      role: 'Fullstack Developer at',
-      company: 'TheEccomerceBoss',
-      link: '#'
-    },
-    {
-      date: '2019-2022',
-      role: 'Backend Developer at',
-      company: 'OrganStation',
+      role: 'Chief Technology Officer at',
+      company: 'Impactpreneur Global',
       link: '#'
     }
   ];

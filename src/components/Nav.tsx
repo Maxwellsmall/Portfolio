@@ -15,10 +15,10 @@ const Nav: React.FC = () => {
         <span className="nav-divider"></span>
 
         <div className="nav-socials">
-          <a href="https://x.com" className="nav-link stretch-hover">
+          <a href="https://x.com/dextrus001" className="nav-link stretch-hover">
             <RiTwitterXFill size={18} />
           </a>
-          <a href="https://github.com" className="nav-link stretch-hover">
+          <a href="https://github.com/danimpulse500" className="nav-link stretch-hover">
             <TbBrandGithub size={20} />
           </a>
           <a href="#resume" className="nav-link stretch-hover">

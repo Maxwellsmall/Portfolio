@@ -15,7 +15,7 @@ const HomePage = () => (
       <div className="avatar">
         <img src="/dextrus.jpg" alt="" />
       </div>
-      <h1>Hey, I'm Chukwuchebem David. <br /> Software Engineer</h1>
+      <h1>Hey, I'm David Chukwuchebem (Dextrus). <br /> Software & Robotics Engineer</h1>
       <p>
         Creating innovative solutions and captivating designs.
         <br />

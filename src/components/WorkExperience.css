@@ -1,0 +1,90 @@
+.work-experience {
+    padding: 60px 0;
+    text-align: left;
+    width: 100%;
+}
+
+.work-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 32px;
+    letter-spacing: -0.5px;
+}
+
+.experience-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.experience-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience-date {
+    font-size: 13px;
+    color: #9ca3af; /* Light gray */
+    font-weight: 400;
+    width: 140px;
+    flex-shrink: 0;
+}
+
+.experience-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-grow: 1;
+    justify-content: flex-end;
+}
+
+.role-text {
+    font-size: 14px;
+    color: #4b5563; /* Darker gray */
+    font-weight: 500;
+}
+
+.company-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #eff6ff; /* Very light blue */
+    color: #3b82f6; /* Blue text */
+    padding: 4px 12px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+
+.company-pill:hover {
+    background-color: #dbeafe;
+    transform: translateY(-1px);
+}
+
+.pill-icon {
+    font-size: 12px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+
+@media (max-width: 640px) {
+    .experience-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+    
+    .experience-info {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+    
+    .experience-date {
+        width: auto;
+    }
+}

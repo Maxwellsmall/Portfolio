@@ -3,11 +3,10 @@
 .carousel-outer-container {
     width: 100vw;
     margin-left: calc(-50vw + 50%);
-    /* Forces the container to ignore parent padding and hit screen edges */
-    overflow-x: auto;
-    padding: 60px 0;
+    overflow: hidden;
+    padding: 40px 0;
+    position: relative;
     scrollbar-width: none;
-    /* Hide scrollbar for Firefox */
 }
 
 .carousel-outer-container::-webkit-scrollbar {
@@ -17,75 +16,73 @@
 
 .carousel-track {
     display: flex;
-    gap: 40px;
-    padding: 0 40px;
+    gap: 32px;
+    padding: 0 16px;
     width: max-content;
 }
 
 /* The Glass Device Frame */
 .device-frame {
     position: relative;
-    width: 300px;
-    /* Adjust based on your screenshot preference */
-    height: 350px;
+    flex-shrink: 0;
+    width: 320px;
+    height: 200px;
     background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 30px;
-    padding: 25px;
-    /* The "bezel" area */
+    border-radius: 24px;
+    padding: 22px;
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    flex-shrink: 0;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
 /* Screw details in corners */
 .screw {
     position: absolute;
-    width: 8px;
-    height: 8px;
+    width: 6px;
+    height: 6px;
     background: #e5e7eb;
     border-radius: 50%;
     border: 1px solid #d1d5db;
 }
 
 .top-left {
-    top: 15px;
-    left: 15px;
+    top: 10px;
+    left: 10px;
 }
 
 .top-right {
-    top: 15px;
-    right: 15px;
+    top: 10px;
+    right: 10px;
 }
 
 .bottom-left {
-    bottom: 15px;
-    left: 15px;
+    bottom: 10px;
+    left: 10px;
 }
 
 .bottom-right {
-    bottom: 15px;
-    right: 15px;
+    bottom: 10px;
+    right: 10px;
 }
 
 /* The Internal Screen */
 .screen-content {
     width: 100%;
     height: 100%;
-    background: #000;
-    /* Default black screen */
-    border-radius: 15px;
+    background: #1a1a1a;
+    /* Dark gray screen background */
+    border-radius: 4px;
     overflow: hidden;
-    /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .project-img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
 }
 
@@ -103,22 +100,9 @@
     letter-spacing: 2px;
 }
 
-.carousel-outer-container {
-    width: 100vw;
-    margin-left: calc(-50vw + 50%);
-    overflow: hidden;
-    /* Hide the part that goes off-screen */
-    padding: 80px 0;
-    position: relative;
-}
+/* .carousel-outer-container consolidated above */
 
-.carousel-track {
-    display: flex;
-    gap: 60px;
-    /* Space between the glass frames */
-    width: max-content;
-    /* Critical: allows track to be as long as its content */
-}
+/* .carousel-track consolidated above */
 
 /* The Infinite Animation */
 .animate-scroll {
@@ -137,25 +121,14 @@
 
     100% {
         /* Moves exactly halfway through the doubled list */
-        transform: translateX(calc(-50% - 30px));
-        /* -30px accounts for half the gap */
+        transform: translateX(calc(-50% - 16px));
+        /* -16px accounts for half the gap */
     }
 }
 
 /* --- Keep your previous .device-frame, .screw, and .screen-content styles --- */
 
-.device-frame {
-    flex-shrink: 0;
-    width: 580px;
-    height: 380px;
-    background: rgba(255, 255, 255, 0.4);
-    backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
-    border-radius: 32px;
-    padding: 28px;
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.04);
-    transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
-}
+/* .device-frame styles moved to consolidation block above */
 
 /* Optional: Slight tilt or lift when hovered while paused */
 .device-frame:hover {

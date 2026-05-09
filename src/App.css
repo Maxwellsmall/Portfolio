@@ -186,6 +186,8 @@
 .container{
   text-align: start;
   width: 600px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /* Container for the avatar */
@@ -231,4 +233,64 @@
 
 .profile{
   margin-top: 20%;
+}
+
+/* Container to center everything */
+.gallery-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: -18px; /* Slight overlap */
+  margin: 50px 0px;
+}
+
+.polaroid-card {
+  background-color: white;
+  padding: 10px 10px 24px 10px; /* Balanced padding for 200px width */
+  width: 200px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  transition: transform 0.3s ease;
+}
+
+/* Ensure the photo stays square */
+.image-container {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  background-color: #eee;
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Style the text handle */
+.footer {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.footer p {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+/* Optional: Hover effect */
+.polaroid-card:hover {
+  z-index: 10;
+  transform: scale(1.05) rotate(0deg) !important;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.about p:last-child {
+  margin-bottom: 0;
 }

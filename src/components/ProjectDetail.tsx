@@ -69,10 +69,10 @@ const ProjectDetail: React.FC = () => {
         <a href={project.link} target="_blank" rel="noopener noreferrer" className="visit-project-btn">
           Visit Project <span className="icon">↗</span>
         </a>
-        <div className="nav-buttons">
+        {/* <div className="nav-buttons">
           <button className="nav-btn prev">‹ Previous</button>
           <button className="nav-btn next">Next ›</button>
-        </div>
+        </div> */}
       </div>
 
       <div className="project-gallery">

@@ -5,7 +5,7 @@ import './ProjectSection.css';
 
 const ProjectSection: React.FC = () => {
   // We'll show the projects with IDs 'pxxl' and 'olamide' as featured
-  const featuredProjects = projects.filter(p => p.id === 'pxxl' || p.id === 'olamide');
+  const featuredProjects = projects.filter(p => p.id === 'prefran' || p.id === 'bimarketplace');
 
   return (
     <div className="project-section">
@@ -27,12 +27,12 @@ const ProjectSection: React.FC = () => {
           </div>
         ))}
       </div>
-      <div className="view-all-container">
+      {/* <div className="view-all-container">
         <Link to="/" className="view-all-btn">
           View All Projects
           <span className="chevron">›</span>
         </Link>
-      </div>
+      </div> */}
     </div>
   );
 };

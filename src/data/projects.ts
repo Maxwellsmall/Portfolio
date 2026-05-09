@@ -31,7 +31,7 @@ export const projects: Project[] = [
     title: 'BI Marketplace',
     subtitle: 'E-commerce platform',
     description: 'Discover BI, the ultimate marketplace for all your products. Shop from a wide range of verified sellers, enjoy secure payments, fast delivery, and top-notch services',
-    technologies: ['React', 'Node.js', 'AWS', 'Docker'],
+    technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Render', 'Vercel'],
     date: '2024',
     type: 'E-commerce',
     client: 'Startup Founders',

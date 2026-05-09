@@ -14,20 +14,20 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'uncutxtra',
-    title: 'Uncutxtra Awards Voting',
-    subtitle: 'Official voting platform for UNCUTXTRA Award Night 4.0',
-    description: 'Voting site for UNCUTXTRA Award Night 4.0, enabling users to securely vote for nominees across categories with seamless performance and reliable data storage.',
-    technologies: ['Next.js', 'Drizzle ORM', 'Node.js', 'PostgreSQL'],
+    id: 'rccg',
+    title: 'Redeem Christian Church of God Ota',
+    subtitle: 'Redeem Christian Church of God Ota Official Website',
+    description: 'Provides Christian Believers (of any denomination) and non-believers searching for the TRUTH in the word of the living God with helpful resources',
+    technologies: ['React Js', 'Tailwind CSS'],
     date: '2025',
-    type: 'Voting Platform',
-    client: 'Uncutxtra',
+    type: 'Church Website',
+    client: 'RCCG Ota President',
     mainImage: '/rccg.png',
-    gallery: ['/uncutxtra-1.png', '/uncutxtra-2.png'],
+    gallery: [],
     link: '#'
   },
   {
-    id: 'pxxl',
+    id: 'bimarketplace',
     title: 'BI Marketplace',
     subtitle: 'E-commerce platform',
     description: 'Discover BI, the ultimate marketplace for all your products. Shop from a wide range of verified sellers, enjoy secure payments, fast delivery, and top-notch services',
@@ -40,16 +40,16 @@ export const projects: Project[] = [
     link: '#'
   },
   {
-    id: 'olamide',
-    title: "Olamide's Tour Website",
-    subtitle: 'Official Musician Website',
-    description: 'Official site for Nigerian Musician: Olamide (Badoo), featuring tour schedules, ticket...',
-    technologies: ['Vite', 'React', 'Framer Motion'],
-    date: '2024',
-    type: 'Entertainment',
-    client: 'YBNL',
+    id: 'prefran',
+    title: "Prefran Global Foods Limited",
+    subtitle: 'Prefran Global Official Website',
+    description: 'At Prefran Global Ventures Nig Ltd, we believe food is love expressed through care, culture, and quality ingredients sourced from Nigerian farms to your kitchen',
+    technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Flutterwave'],
+    date: '2026',
+    type: 'Food',
+    client: 'The Prefran Global President',
     mainImage: '/prefran.png',
     gallery: [],
-    link: '#'
+    link: 'prefranglobalfoodsltd.com'
   }
 ];

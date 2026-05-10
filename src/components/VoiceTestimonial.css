@@ -1,0 +1,164 @@
+.vn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 20px;
+}
+
+.vn-card {
+    background: white;
+    padding: 10px 14px;
+    border-radius: 12px 12px 12px 0px;
+    /* WhatsApp style tail */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    max-width: 320px;
+    position: relative;
+}
+
+.vn-avatar-wrapper {
+    position: relative;
+    width: 45px;
+    height: 45px;
+}
+
+.vn-avatar-wrapper img,
+.vn-default-avatar {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    background: #e9edef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vn-mic-badge {
+    position: absolute;
+    bottom: -2px;
+    right: -2px;
+    background: #34b7f1;
+    /* WhatsApp blue */
+    border-radius: 50%;
+    padding: 3px;
+    border: 2px solid white;
+}
+
+.vn-play-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #54656f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.vn-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.vn-waveform {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    height: 25px;
+}
+
+.vn-bar {
+    width: 2px;
+    background: #d1d7db;
+    border-radius: 1px;
+    transition: background 0.2s ease;
+}
+
+.vn-bar.active {
+    background: #34b7f1;
+}
+
+.vn-footer {
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    color: #667781;
+}
+
+.vn-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #54656f;
+    margin-left: 5px;
+}
+
+
+.vn-wrapper-outer {
+    margin: 25px;
+    max-width: 600px;
+}
+
+.vn-main-row {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* Space between bubble and transcript */
+}
+
+.vn-card {
+    background: white;
+    padding: 10px 16px;
+    border-radius: 16px 16px 16px 0px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 280px;
+}
+
+.vn-avatar-wrapper img,
+.vn-default-avatar {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: #f0f2f5;
+}
+
+.vn-play-btn {
+    background: none;
+    border: none;
+    color: #54656f;
+    cursor: pointer;
+    padding: 0;
+}
+
+/* Transcript Styling */
+.vn-transcript-area {
+    flex: 1;
+    opacity: 0;
+    transform: translateX(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    font-style: italic;
+    color: #333;
+    font-size: 0.95rem;
+    line-height: 1.4;
+    border-left: 2px solid #34b7f1;
+    padding-left: 15px;
+}
+
+.vn-transcript-area.visible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.vn-bar.active {
+    background: #34b7f1;
+}
+
+/* ... keep the rest of the previous waveform/footer CSS ... */

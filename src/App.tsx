@@ -8,6 +8,14 @@ import PhotoGallery from './components/PhotoGallery'
 import WorkExperience from './components/WorkExperience'
 import ContactSection from './components/ContactSection'
 import ProjectDetail from './components/ProjectDetail'
+import VoiceTestimonial from './components/VoiceTestimonial'
+
+const myTranscript = [
+  { start: 0, end: 3, text: "Hey! I just wanted to say..." },
+  { start: 3.5, end: 7, text: "The website Dextrus built for us is incredible." },
+  { start: 7.5, end: 12, text: "Our conversion rate doubled in the first week." },
+  { start: 12.5, end: 16, text: "Highly recommend working with him!" }
+];
 
 const HomePage = () => (
   <div className="container">
@@ -43,6 +51,29 @@ const HomePage = () => (
     <ProjectSection />
     {/* <PixelName /> */}
     <WorkExperience />
+    
+    <h2 className="work-title">What people say about me</h2>
+
+    <div className="testimonials-grid">
+   <VoiceTestimonial 
+      name="CEO of Impactprenuer Global - Mr. George Bassey"
+      audioSrc="/audio.MP3"
+      time="11:05 am"
+      transcript={myTranscript}
+    />
+   <VoiceTestimonial 
+      name="CEO of Prefran Global Foods Limited"
+      audioSrc="/audio.MP3"
+      time="11:05 am"
+      transcript={myTranscript}
+    />
+   <VoiceTestimonial 
+      name="CEO of Afnotek - Mr. Nang Denzel"
+      audioSrc="/audio.MP3"
+      time="11:05 am"
+      transcript={myTranscript}
+    />
+  </div>
     <ContactSection />
   </div>
 );

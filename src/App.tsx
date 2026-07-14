@@ -21,9 +21,9 @@ const HomePage = () => (
   <div className="container">
     <div className='profile'>
       <div className="avatar">
-        <img src="/dextrus.jpg" alt="" />
+        <img src="/maxwellweb3.png" alt="" />
       </div>
-      <h1>Hey, I'm David Chukwuchebem (Dextrus). <br /> Software & Robotics Engineer</h1>
+      <h1>Hey, I'm Maxwell Edunfunke (w3b3T). <br /> Software & Robotics Engineer</h1>
       <p>
         Creating innovative solutions and captivating designs.
         <br />
@@ -39,7 +39,7 @@ const HomePage = () => (
         I like to craft solid and scalable products with exceptional user experiences, focusing on innovation and problem-solving across various industries.
       </p>
       <p>
-        I'm Robinson Honour, a Nigerian software developer with 9+ years of experience in web development, app development, robotics, cloud computing, and game development. I specialize in building robust applications, cloud platforms, and cutting-edge robotics solutions.
+        I'm Maxwell Edunfunke, a Nigerian software developer with 9+ years of experience in web development, app development, robotics, cloud computing, and game development. I specialize in building robust applications, cloud platforms, and cutting-edge robotics solutions.
       </p>
       <p>
         A self-taught programmer, ranked among the top programmers in Port Harcourt, Nigeria, I am an active tech content creator, speaker, and mentor passionate about empowering others in tech. I'm also the CEO and founder of Pxxl App, a cloud deployment platform for websites, APIs, and databases.

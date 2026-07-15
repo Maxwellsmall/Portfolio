@@ -1,0 +1,139 @@
+.architecture-section {
+  margin: 5rem 0;
+  padding: 2.5rem;
+  background: #ffffff;
+  border: 1px solid #eaeaea;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.02);
+}
+
+.architecture-section h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #111111;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.section-subtitle {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 2rem;
+}
+
+/* Tabs Navigation */
+.architecture-tabs {
+  display: flex;
+  gap: 0.75rem;
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.architecture-tabs button {
+  background: none;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #666666;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+/* .architecture-tabs button:hover {
+  color: #111111;
+  background-color: #f5f5f7;
+} */
+
+/* .architecture-tabs button.active {
+  color: #ffffff;
+  background-color: #000000;
+  font-weight: 600;
+}
+
+/* Display Window */
+.architecture-display {
+  background: #f9fafb;
+  border: 1px solid #eaeaea;
+  border-radius: 12px;
+  padding: 2rem;
+  min-height: 200px;
+  display: flex;
+  align-items: center;
+  transition: opacity 0.25s ease, transform 0.25s ease;
+  animation: fadeIn 0.3s ease-out;
+} */
+
+.architecture-details {
+  width: 100%;
+}
+
+.architecture-details h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #111111;
+  margin-top: 0;
+  margin-bottom: 1.25rem;
+}
+
+.architecture-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.architecture-details li {
+  font-size: 0.95rem;
+  color: #444444;
+  line-height: 1.5;
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+/* Custom minimal bullet points */
+.architecture-details li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #000000;
+  font-weight: bold;
+}
+
+.architecture-details li strong {
+  color: #111111;
+}
+
+/* Simple entry animation when switching tabs */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+  .architecture-section {
+    padding: 1.5rem;
+  }
+  
+  .architecture-tabs {
+    gap: 0.5rem;
+  }
+  
+  .architecture-tabs button {
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+}

@@ -15,13 +15,14 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: 'timelyhub',
-    title: 'Redeem Christian Church of God Ota',
-    subtitle: 'Redeem Christian Church of God Ota Official Website',
-    description: 'Provides Christian Believers (of any denomination) and non-believers searching for the TRUTH in the word of the living God with helpful resources',
+    title: 'TmelyHub',
+    subtitle: 'TimelyHub Official Website',
+    description:
+  "TimelyHub is a modern digital platform designed to simplify everyday processes by providing fast, reliable, and user-friendly solutions that help individuals and businesses stay organized, connected, and productive.",
     technologies: ['React Js', 'Tailwind CSS'],
     date: '2025',
-    type: 'Church Website',
-    client: 'RCCG Ota President',
+    type: 'Learning Platform',
+    client: 'Timelyhub President',
     mainImage: '/timelyhub.png',
     gallery: [],
     link: '#'
@@ -41,9 +42,9 @@ export const projects: Project[] = [
   },
   {
     id: 'antartes',
-    title: "Prefran Global Foods Limited",
-    subtitle: 'Prefran Global Official Website',
-    description: 'At Prefran Global Ventures Nig Ltd, we believe food is love expressed through care, culture, and quality ingredients sourced from Nigerian farms to your kitchen',
+    title: "Antartes Official Website",
+    subtitle: "Building Digital Solutions That Drive Growth",    
+    description: "Antartes is a technology company that helps businesses, startups, and organizations bring their ideas to life through custom websites, mobile applications, and innovative digital solutions. We combine creativity, strategy, and modern technology to build scalable products that drive growth and deliver exceptional user experiences.",
     technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Flutterwave'],
     date: '2025',
     type: 'Food',
@@ -54,13 +55,13 @@ export const projects: Project[] = [
   },
    {
     id: 'impactpreneur',
-    title: "Prefran Global Foods Limited",
-    subtitle: 'Prefran Global Official Website',
-    description: 'At Prefran Global Ventures Nig Ltd, we believe food is love expressed through care, culture, and quality ingredients sourced from Nigerian farms to your kitchen',
+    title: "Impactpreneur Global",
+    subtitle: 'Impactpreneur Global Official Website',
+    description: "Impactpreneur Global empowers entrepreneurs and businesses with mentorship, education, consulting, and digital solutions to build sustainable, purpose-driven ventures and create lasting impact.",
     technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Flutterwave'],
     date: '2025',
     type: 'Food',
-    client: 'The Prefran Global President',
+    client: 'The Impactpreneur Global President',
     mainImage: '/impactPreneur.png',
     gallery: [],
     link: 'impactpreneurglobal.com'

@@ -21,12 +21,12 @@ const WorkExperience: React.FC = () => {
       company: 'BI Marketplace',
       link: 'bimarketplace.org'
     },
-    {
-      date: '2025',
-      role: 'Volunteer at',
-      company: 'Tech Summer for Teens, TGDI',
-      link: 'https://tgdi.org.ng/'
-    },
+    // {
+    //   date: '2025',
+    //   role: 'Volunteer at',
+    //   company: 'Tech Summer for Teens, TGDI',
+    //   link: 'https://tgdi.org.ng/'
+    // },
     {
       date: '2025-Present',
       role: 'Chief Technology Officer at',

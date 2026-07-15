@@ -9,6 +9,8 @@ import WorkExperience from './components/WorkExperience'
 import ContactSection from './components/ContactSection'
 import ProjectDetail from './components/ProjectDetail'
 // import VoiceTestimonial from './components/VoiceTestimonial'
+  // import Architecture from "./components/Architecture"
+
 
 // const myTranscript = [
 //   { start: 0, end: 3, text: "Hey! I just wanted to say..." },
@@ -50,6 +52,7 @@ const HomePage = () => (
 
       <PhotoGallery />
     </div>
+    {/* <Architecture/> */}
 
     <ProjectSection />
     {/* <PixelName /> */}

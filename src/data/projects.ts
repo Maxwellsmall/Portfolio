@@ -14,7 +14,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    id: 'rccg',
+    id: 'timelyhub',
     title: 'Redeem Christian Church of God Ota',
     subtitle: 'Redeem Christian Church of God Ota Official Website',
     description: 'Provides Christian Believers (of any denomination) and non-believers searching for the TRUTH in the word of the living God with helpful resources',
@@ -22,7 +22,7 @@ export const projects: Project[] = [
     date: '2025',
     type: 'Church Website',
     client: 'RCCG Ota President',
-    mainImage: '/rccg.png',
+    mainImage: '/timelyhub.png',
     gallery: [],
     link: '#'
   },
@@ -40,16 +40,30 @@ export const projects: Project[] = [
     link: '#'
   },
   {
-    id: 'prefran',
+    id: 'antartes',
     title: "Prefran Global Foods Limited",
     subtitle: 'Prefran Global Official Website',
     description: 'At Prefran Global Ventures Nig Ltd, we believe food is love expressed through care, culture, and quality ingredients sourced from Nigerian farms to your kitchen',
     technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Flutterwave'],
-    date: '2026',
+    date: '2025',
     type: 'Food',
     client: 'The Prefran Global President',
-    mainImage: '/prefran.png',
+    mainImage: '/antartes.png',
     gallery: [],
-    link: 'prefranglobalfoodsltd.com'
+    link: 'antartes.vercel.app'
+  },
+   {
+    id: 'impactpreneur',
+    title: "Prefran Global Foods Limited",
+    subtitle: 'Prefran Global Official Website',
+    description: 'At Prefran Global Ventures Nig Ltd, we believe food is love expressed through care, culture, and quality ingredients sourced from Nigerian farms to your kitchen',
+    technologies: ['Next Js', 'Django', 'PXXL Posgresql Database', 'Flutterwave'],
+    date: '2025',
+    type: 'Food',
+    client: 'The Prefran Global President',
+    mainImage: '/impactPreneur.png',
+    gallery: [],
+    link: 'impactpreneurglobal.com'
   }
+
 ];

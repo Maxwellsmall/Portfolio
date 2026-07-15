@@ -8,14 +8,14 @@ import PhotoGallery from './components/PhotoGallery'
 import WorkExperience from './components/WorkExperience'
 import ContactSection from './components/ContactSection'
 import ProjectDetail from './components/ProjectDetail'
-import VoiceTestimonial from './components/VoiceTestimonial'
+// import VoiceTestimonial from './components/VoiceTestimonial'
 
-const myTranscript = [
-  { start: 0, end: 3, text: "Hey! I just wanted to say..." },
-  { start: 3.5, end: 7, text: "The website Dextrus built for us is incredible." },
-  { start: 7.5, end: 12, text: "Our conversion rate doubled in the first week." },
-  { start: 12.5, end: 16, text: "Highly recommend working with him!" }
-];
+// const myTranscript = [
+//   { start: 0, end: 3, text: "Hey! I just wanted to say..." },
+//   { start: 3.5, end: 7, text: "The website Dextrus built for us is incredible." },
+//   { start: 7.5, end: 12, text: "Our conversion rate doubled in the first week." },
+//   { start: 12.5, end: 16, text: "Highly recommend working with him!" }
+// ];
 
 const HomePage = () => (
   <div className="container">
@@ -36,13 +36,16 @@ const HomePage = () => (
     <div className='about'>
       <h1>About</h1>
       <p>
-        I like to craft solid and scalable products with exceptional user experiences, focusing on innovation and problem-solving across various industries.
+        I craft solid, scalable products with exceptional user experiences, focusing on innovation and practical problem-solving.
       </p>
       <p>
-        I'm Maxwell Edunfunke, a Nigerian software developer with 9+ years of experience in web development, app development, robotics, cloud computing, and game development. I specialize in building robust applications, cloud platforms, and cutting-edge robotics solutions.
+        I'm Maxwell Edunfunke, a software engineer with 3+ years of experience spanning full-stack web development, mobile apps, and robotics. After sharpening my foundation through a professional development academy, I have focused on mastering modern web architecture and building secure distributed systems. 
       </p>
       <p>
-        A self-taught programmer, ranked among the top programmers in Port Harcourt, Nigeria, I am an active tech content creator, speaker, and mentor passionate about empowering others in tech. I'm also the CEO and founder of Pxxl App, a cloud deployment platform for websites, APIs, and databases.
+        Currently, I serve as the Chief Technology Officer (CTO) at Charmpay, where I drive the technical execution, engineering architecture, and frontend development for our escrow payment platforms.
+      </p>
+      <p>
+        A defining milestone in my career was being selected to represent Nigeria at the World Robot Olympiad (WRO) 2023 International Finals in Panama City. Competing on a global stage against top talent worldwide, my team engineered, programmed, and calibrated autonomous robotic systems under strict, high-pressure competitive criteria. This experience solidified my expertise in algorithmic logic, hardware-software integration, and rapid problem-solving under pressure.
       </p>
 
       <PhotoGallery />
@@ -52,9 +55,9 @@ const HomePage = () => (
     {/* <PixelName /> */}
     <WorkExperience />
     
-    <h2 className="work-title">What people say about me</h2>
+    {/* <h2 className="work-title">What people say about me</h2> */}
 
-    <div className="testimonials-grid">
+    {/* <div className="testimonials-grid">
    <VoiceTestimonial 
       name="CEO of Impactprenuer Global - Mr. George Bassey"
       audioSrc="/audio.MP3"
@@ -73,8 +76,8 @@ const HomePage = () => (
       time="11:05 am"
       transcript={myTranscript}
     />
-  </div>
-    <ContactSection />
+  </div> */}
+    <ContactSection onSubmit={(data) => console.log('Form submitted: ', data)} isLoading={false}/>
   </div>
 );
 

@@ -6,8 +6,8 @@ const WorkExperience: React.FC = () => {
     {
       date: 'Sept 2025-Present',
       role: 'Software Developer at',
-      company: 'Rule Creationz',
-      link: 'rulecreationz.com'
+      company: 'Antartes',
+      link: 'antartes.vercel.app'
     },
     {
       date: 'Sept 2026-Present',
@@ -17,7 +17,7 @@ const WorkExperience: React.FC = () => {
     },
     {
       date: 'April 2025-Present',
-      role: 'Full stack Developer at',
+      role: 'Frontend Decveloper at',
       company: 'BI Marketplace',
       link: 'bimarketplace.org'
     },
@@ -30,8 +30,8 @@ const WorkExperience: React.FC = () => {
     {
       date: '2025-Present',
       role: 'Chief Technology Officer at',
-      company: 'Impactpreneur Global',
-      link: '#'
+      company: 'Charmpay',
+      link: 'charmpay.com.ng'
     }
   ];
 

@@ -4,8 +4,7 @@ import { projects } from '../data/projects';
 import './ProjectSection.css';
 
 const ProjectSection: React.FC = () => {
-  // We'll show the projects with IDs 'pxxl' and 'olamide' as featured
-  const featuredProjects = projects.filter(p => p.id === 'prefran' || p.id === 'bimarketplace');
+  const featuredProjects = projects.filter(p => p.id === 'bimarketplace' || p.id === 'antartes');
 
   return (
     <div className="project-section">

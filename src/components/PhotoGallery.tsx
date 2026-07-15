@@ -25,13 +25,13 @@ const PhotoGallery: React.FC = () => {
   return (
     <div className="gallery-wrapper">
       <Polaroid 
-        imgSrc="/dextrus2.jpeg" 
-        handle="Chukwuchebem David" 
+        imgSrc="/maxwellweb3.png" 
+        handle="Edunfunke Maxwell" 
         rotation={-10} 
       />
       <Polaroid 
-        imgSrc="/dextrus.jpg" 
-        handle="@dextrus001" 
+        imgSrc="/Maxwell.jpg" 
+        handle="@maxwellweb3" 
         rotation={5} 
       />
     </div>

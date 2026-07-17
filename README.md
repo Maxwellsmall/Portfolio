@@ -1,73 +1,24 @@
-# React + TypeScript + Vite
+ personal portfolio
+A fast, fully responsive portfolio application built to showcase my web development projects, engineering background, and technical articles. I designed and built this site to serve as a clean, centralized hub for my work, focusing on clean layout shifts, modern styling, and optimal performance.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ The Tech Stack
+ Frontend Framework: Next.js (App Router)
+ Styling & Layout: Tailwind CSS
+ Animations: Framer Motion
+ Deployment & Hosting: Vercel
 
-Currently, two official plugins are available:
+ Dynamic Routing: Built using the React.Ts  Router structure, leveraging folder-based paths and layouts to keep global UI elements like headers and footers consistent across pages without unneccesary re-renders.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+ Smooth Scrolling Elements: Integrated a hardware-accelerated infinite horizontal marquee using Framer Motion to display partner and brand elements dynamically without layout stuttering or rendering lag.
+ 
+ Component Modularity: Designed highly reusable UI components—such as dynamic blog cards and step-based feature layouts—ensuring clean, dry code across the entire application.
+ Client vs. Server Separation: Optimized data handling by utilizing Server Components by default for fast initial page loads, explicitly applying the client directive only where active user interaction, state changes, or frontend animations require it.
 
-## React Compiler
+ Fluid Layouts and Animation: Getting continuous horizontal scroll tracks to loop seamlessly without breaking layout alignment or squishing custom aspect-ratio imagery took some trial and error with Tailwind's flex-shrink rules and Framer Motion coordinates. 
+ Structuring Code Architecture: Navigating folder-based routing meant learning how Next.js isolates public route segments. I had to learn how to structure internal sub-components natively within their operational directories without accidentally leaking private layout files into public URL paths.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+1. Clone the repository:
+```bash
+git clone <https://github.com/Maxwellsmall/Portfolio.git>
+cd <project-desktop-portfolio>

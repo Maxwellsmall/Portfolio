@@ -1,24 +1,31 @@
- personal portfolio
+ Maxwell Edunfunke (w3b3T) | Personal Portfolio
+
 A fast, fully responsive portfolio application built to showcase my web development projects, engineering background, and technical articles. I designed and built this site to serve as a clean, centralized hub for my work, focusing on clean layout shifts, modern styling, and optimal performance.
 
- The Tech Stack
+  Live Link
+[devmaxi.vercel.app](https://devmaxi.vercel.app)
+
+  What I Did & Why
+
+ 1. Architectural Architecture & Stack Selection
+ Next.js (App Router) & TypeScript: Chosen as the core framework to take advantage of file-based routing and native Server Components. This architecture keeps global UI elements (like headers and footers) consistent across pages without unnecessary re-renders, resulting in faster initial page loads.
+ Tailwind CSS: Used for utility-first styling to ensure fluid, responsive layouts across all device form factors while maintaining an extremely small CSS footprint.
+ Framer Motion: Integrated to handle complex, hardware-accelerated animations smoothly without causing rendering lag or layout stuttering.
+
+ 2. Technical Engineering Challenges Solved
+ Client vs. Server Component Separation: Optimized data handling and page load speeds by leveraging Server Components by default. I explicitly applied the `'use client'` directive only where active user interaction, state changes, or frontend animations required it.
+ Seamless Loop Animations: Engineering the continuous, infinite horizontal marquee took careful orchestration. I had to resolve layout alignment issues and prevent custom aspect-ratio imagery from squishing by fine-tuning Tailwind's `flex-shrink` rules alongside Framer Motion coordinate systems.
+ Robust Folder Architecture: Navigating Next.js folder-based routing meant learning how the framework isolates public route segments. I structured internal sub-components natively within their operational directories without leaking private layout files into public URL paths, keeping the codebase clean and modular.
+
+  The Tech Stack
  Frontend Framework: Next.js (App Router)
+ Language: TypeScript, JavaScript
  Styling & Layout: Tailwind CSS
  Animations: Framer Motion
  Deployment & Hosting: Vercel
 
- Dynamic Routing: Built using the React.Ts  Router structure, leveraging folder-based paths and layouts to keep global UI elements like headers and footers consistent across pages without unneccesary re-renders.
-
- Smooth Scrolling Elements: Integrated a hardware-accelerated infinite horizontal marquee using Framer Motion to display partner and brand elements dynamically without layout stuttering or rendering lag.
- 
- Component Modularity: Designed highly reusable UI components—such as dynamic blog cards and step-based feature layouts—ensuring clean, dry code across the entire application.
- Client vs. Server Separation: Optimized data handling by utilizing Server Components by default for fast initial page loads, explicitly applying the client directive only where active user interaction, state changes, or frontend animations require it.
-
- Fluid Layouts and Animation: Getting continuous horizontal scroll tracks to loop seamlessly without breaking layout alignment or squishing custom aspect-ratio imagery took some trial and error with Tailwind's flex-shrink rules and Framer Motion coordinates. 
- Structuring Code Architecture: Navigating folder-based routing meant learning how Next.js isolates public route segments. I had to learn how to structure internal sub-components natively within their operational directories without accidentally leaking private layout files into public URL paths.
-
-
+ Installation
 1. Clone the repository:
-```bash
-git clone <https://github.com/Maxwellsmall/Portfolio.git>
-cd <project-desktop-portfolio>
+   ```bash
+   git clone [https://github.com/Maxwellsmall/Portfolio.git](https://github.com/Maxwellsmall/Portfolio.git)
+   cd Portfolio

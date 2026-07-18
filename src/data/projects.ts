@@ -38,7 +38,7 @@ export const projects: Project[] = [
     client: 'Startup Founders',
     mainImage: '/bimarketplace.png',
     gallery: [],
-    link: '#'
+    link: 'https://bimarketplace.org'
   },
   {
     id: 'antartes',
@@ -51,7 +51,7 @@ export const projects: Project[] = [
     client: 'The Prefran Global President',
     mainImage: '/antartes.png',
     gallery: [],
-    link: 'antartes.vercel.app'
+    link: 'https://antartes.vercel.app'
   },
    {
     id: 'impactpreneur',
@@ -64,7 +64,7 @@ export const projects: Project[] = [
     client: 'The Impactpreneur Global President',
     mainImage: '/impactPreneur.png',
     gallery: [],
-    link: 'impactpreneurglobal.com'
+    link: 'https://impactpreneurglobal.com'
   }
 
 ];

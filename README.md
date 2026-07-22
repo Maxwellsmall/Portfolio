@@ -5,6 +5,8 @@ A fast, fully responsive portfolio application built to showcase my web developm
   Live Link
 [devmaxi.vercel.app](https://devmaxi.vercel.app)
 
+ ![project screenshot]("./public/projectScreenshot.png")
+
   What I Did & Why
 
  1. Architectural Architecture & Stack Selection

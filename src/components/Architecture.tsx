@@ -1,69 +1,76 @@
-import React, { useState } from 'react';
-import './Architecture.css';
+// import { useState } from "react";
 
-const Architecture = () => {
-  const [activeLayer, setActiveLayer] = useState<'frontend' | 'backend' | 'db'>('frontend');
 
-  return (
-    <div className="architecture-section">
-      <h2>How I Architect Systems</h2>
-      <p className="section-subtitle">Click a layer to see how I build solid, distributed web applications.</p>
+// export interface FormData{
+//   name: string
+//   email: string
+//   phoneNo: string
+//   password: string
+// }
+
+// interface FormDataProps{
+//   onSubmit: (data: FormData) => void;
+//   isLoading: boolean
+// }
+
+// export const ApplicationForm: React.FC<FormDataProps> = ({onSubmit, isLoading = false}) => {
+//   const [formData, setFormData] = useState<FormData>({
+//     name: "",
+//     email: "",
+//     password: "",
+//     phoneNo: ""
+//   })
+
+//   const handleSubmit = async (e: React.FormEvent) => {
+//     e.preventDefault()
+
+//     try{
+
+//       const response = await fetch("https://jsonplaceholder.com", {
+//         method: "POST",
+//         headers: {
+//           "Conent-Type": "application/json",
+//         },
+//         body: JSON.stringify({
+//           name: formData.name,
+//           email: formData.email,
+//           password: formData.password,
+//           phoneNo: formData.phoneNo
+//         })
+//       })
       
-      <div className="architecture-tabs">
-        <button 
-          className={activeLayer === 'frontend' ? 'active' : ''} 
-          onClick={() => setActiveLayer('frontend')}
-        >
-          Frontend (UX & State)
-        </button>
-        <button 
-          className={activeLayer === 'backend' ? 'active' : ''} 
-          onClick={() => setActiveLayer('backend')}
-        >
-          Backend & APIs
-        </button>
-        <button 
-          className={activeLayer === 'db' ? 'active' : ''} 
-          onClick={() => setActiveLayer('db')}
-        >
-          Database & Security
-        </button>
-      </div>
+//       if(!response.ok){
+//           throw new Error("Something went wrong, Please try again")
+//         }
 
-      <div className="architecture-display">
-        {activeLayer === 'frontend' && (
-          <div className="architecture-details">
-            <h3>Responsive & Fast Client Layers</h3>
-            <ul>
-              <li><strong>Frameworks:</strong> Next.js & React for optimized rendering.</li>
-              <li><strong>State:</strong> Clean global context or lightweight state containers for zero-lag interactions.</li>
-              <li><strong>Styles:</strong> Tailwind CSS for highly maintainable, modern, utility-first design systems.</li>
-            </ul>
-          </div>
-        )}
-        {activeLayer === 'backend' && (
-          <div className="architecture-details">
-            <h3>Robust Distributed Backend Services</h3>
-            <ul>
-              <li><strong>Runtime:</strong> Node.js & Express for high-concurrency event loops.</li>
-              <li><strong>Integrations:</strong> Custom webhook handlers and escrow API integrations.</li>
-              <li><strong>Performance:</strong> Aggressive route caching and minimal payload overhead.</li>
-            </ul>
-          </div>
-        )}
-        {activeLayer === 'db' && (
-          <div className="architecture-details">
-            <h3>Secure Data Warehousing</h3>
-            <ul>
-              <li><strong>Database:</strong> MongoDB for flexible, document-based schemas.</li>
-              <li><strong>Security:</strong> Strong data sanitization to block injection, combined with CORS-protected environments.</li>
-              <li><strong>Backups:</strong> Auto-scaling storage clusters designed for high availability.</li>
-            </ul>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-};
+//       const data = response.json()
+//       onSubmit(data)
 
-export default Architecture;
+//       setFormData({
+//         name: "",
+//         email: "",
+//         password: "",
+//         phoneNo: ""
+//       })
+
+//     } catch(e){
+//       console.error(e)
+//     }finally{
+
+//     }
+
+    
+
+//   }
+
+
+//   return (
+//     <form onSubmit={handleSubmit}>
+//       <input 
+//       type="text"
+//       value={formData.name}
+//       onChange={(e) => setFormData({...formData, name: e.target.value})} 
+//       />
+//     </form>
+//   )
+// }
